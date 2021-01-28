@@ -1,9 +1,12 @@
 // Copyright (c) The Diem Core Contributors
 // SPDX-License-Identifier: Apache-2.0
 
-use crate::async_client::{
-    types as jsonrpc, BroadcastHttpClient, Client, Error, JsonRpcResponse, Request, Response,
-    Retry, State, UnexpectedError, WaitForTransactionError,
+use crate::{
+    async_client::{
+        types as jsonrpc, BroadcastHttpClient, Client, JsonRpcResponse, Request, Response, Retry,
+        State,
+    },
+    Error, UnexpectedError, WaitForTransactionError,
 };
 use diem_types::{account_address::AccountAddress, transaction::SignedTransaction};
 use reqwest::Url;

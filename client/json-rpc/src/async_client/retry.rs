@@ -1,7 +1,7 @@
 // Copyright (c) The Diem Core Contributors
 // SPDX-License-Identifier: Apache-2.0
 
-use crate::async_client::{defaults, Error};
+use crate::{async_client::defaults, Error};
 use std::time::Duration;
 
 pub trait RetryStrategy: std::fmt::Debug + Send + Sync {

@@ -1,9 +1,12 @@
 // Copyright (c) The Diem Core Contributors
 // SPDX-License-Identifier: Apache-2.0
 
-use crate::async_client::{
-    defaults, types as jsonrpc, BroadcastHttpClient, Error, HttpClient, JsonRpcResponse, Request,
-    Response, RetryStrategy, SimpleHttpClient, State, WaitForTransactionError,
+use crate::{
+    async_client::{
+        defaults, types as jsonrpc, BroadcastHttpClient, HttpClient, JsonRpcResponse, Request,
+        Response, RetryStrategy, SimpleHttpClient, State,
+    },
+    Error, WaitForTransactionError,
 };
 use diem_crypto::hash::CryptoHash;
 use diem_types::{
@@ -260,8 +263,11 @@ impl<R: RetryStrategy> Client<R> {
     /// in order of given requests:
     ///
     /// ```rust
-    /// use diem_json_rpc_client::async_client::{
-    ///     types as jsonrpc, Client, Error, Request, Response, Retry,
+    /// use diem_json_rpc_client::{
+    ///     Error,
+    ///     async_client::{
+    ///         types as jsonrpc, Client, Request, Response, Retry,
+    ///     },
     /// };
     /// use std::convert::{TryInto};
     ///

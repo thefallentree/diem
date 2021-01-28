@@ -1,7 +1,10 @@
 // Copyright (c) The Diem Core Contributors
 // SPDX-License-Identifier: Apache-2.0
 
-use crate::async_client::{defaults, Error, JsonRpcResponse, State, StateManager};
+use crate::{
+    async_client::{defaults, JsonRpcResponse, State, StateManager},
+    Error,
+};
 use async_trait::async_trait;
 use futures::future::join_all;
 

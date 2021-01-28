@@ -2,8 +2,9 @@
 // SPDX-License-Identifier: Apache-2.0
 
 use anyhow::{bail, ensure, Result};
-use diem_json_rpc_client::async_client::{
-    types as jsonrpc, Client, Retry, WaitForTransactionError,
+use diem_json_rpc_client::{
+    async_client::{types as jsonrpc, Client, Retry},
+    WaitForTransactionError,
 };
 use diem_logger::prelude::info;
 use diem_types::{

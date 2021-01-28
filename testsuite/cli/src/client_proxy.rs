@@ -13,7 +13,7 @@ use diem_crypto::{
     ed25519::{Ed25519PrivateKey, Ed25519PublicKey, Ed25519Signature},
     test_utils::KeyPair,
 };
-use diem_json_rpc_client::async_client::{types as jsonrpc, WaitForTransactionError};
+use diem_json_rpc_client::{async_client::types as jsonrpc, WaitForTransactionError};
 use diem_logger::prelude::{error, info};
 use diem_temppath::TempPath;
 use diem_types::{
