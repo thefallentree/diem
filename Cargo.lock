@@ -2274,7 +2274,6 @@ dependencies = [
  "diem-types",
  "diem-workspace-hack",
  "diemdb",
- "reqwest",
  "scratchpad",
  "storage-interface",
  "vm",
